@@ -17,13 +17,13 @@ public class BookProvider {
                 .build();
     }
 
-    public UUID getRandomBook() {
+    public Book getRandomBook() {
         Book randomBook = webClient.get()
                 .uri("http://book-service/api/book/random")
                 .retrieve()
                 .bodyToMono(Book.class)
                 .block();
 
-        return randomBook.getId();
+        return randomBook;
     }
 }

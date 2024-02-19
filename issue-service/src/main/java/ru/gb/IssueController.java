@@ -20,5 +20,4 @@ public class IssueController {
     public List<Issue> getAll() {
         return issueRepository.getAllIssues();
     }
-
 }

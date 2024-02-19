@@ -14,12 +14,12 @@ public class ReaderProvider {
                 .filter(loadBalancerExchangeFilterFunction)
                 .build();
     }
-    public UUID getRandomReader() {
+    public Reader getRandomReader() {
         Reader randomReader = webClient.get()
                 .uri("http://reader-service/api/reader/random")
                 .retrieve()
                 .bodyToMono(Reader.class)
                 .block();
-        return randomReader.getId();
+        return randomReader;
     }
 }
