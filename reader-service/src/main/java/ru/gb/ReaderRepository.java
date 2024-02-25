@@ -2,14 +2,13 @@ package ru.gb;
 
 import com.github.javafaker.Faker;
 import org.springframework.stereotype.Repository;
-import ru.gb.Timer.Timer;
+import ru.gb.timer.Timer;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 @Repository
-@Timer
 public class ReaderRepository {
 
     private final Faker faker;
@@ -27,11 +26,11 @@ public class ReaderRepository {
             this.readers.add(reader);
         }
     }
-
+@Timer
     public List<Reader> getAllReaders() {
         return List.copyOf(this.readers);
     }
-
+@Timer
     public Reader getRandomReader() {
         final int randomIndex = faker.number().numberBetween(0, this.readers.size());
         return this.readers.get(randomIndex);

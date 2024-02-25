@@ -4,9 +4,7 @@ import org.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalance
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.*;
 import ru.gb.Book;
-import ru.gb.Timer.Timer;
-
-import java.util.UUID;
+import ru.gb.timer.Timer;
 
 @Service
 @Timer

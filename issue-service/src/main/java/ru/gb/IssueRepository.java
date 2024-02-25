@@ -2,7 +2,7 @@ package ru.gb;
 
 import com.github.javafaker.Faker;
 import org.springframework.stereotype.Repository;
-import ru.gb.Timer.Timer;
+import ru.gb.timer.Timer;
 import ru.gb.service.BookProvider;
 import ru.gb.service.ReaderProvider;
 

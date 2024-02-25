@@ -7,6 +7,5 @@ eureka:
 spring:
   application:
     name: reader-service
-custom-starter:
-  timer:
-    enabled: true
+timer:
+  enabled: true

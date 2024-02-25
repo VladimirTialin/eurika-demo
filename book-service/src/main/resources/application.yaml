@@ -7,6 +7,5 @@ eureka:
 spring:
   application:
     name: book-service
-custom-starter:
-  timer:
-      enabled: true
+timer:
+  enabled: true

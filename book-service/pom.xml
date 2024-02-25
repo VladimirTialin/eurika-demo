@@ -36,15 +36,9 @@
             <version>0.15</version>
         </dependency>
         <dependency>
-            <groupId>ru.gb</groupId>
+            <groupId>ru.geekbrains</groupId>
             <artifactId>timer-starter</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
-    <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
 </project>

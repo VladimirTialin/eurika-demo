@@ -1,4 +1,4 @@
-package ru.gb.Timer;
+package ru.gb.timer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -12,10 +12,10 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class TimerAspect {
 
-    @Pointcut("within(@ru.gb.Timer *)")
+    @Pointcut("within(@ru.gb.timer.Timer *)")
     public void beansAnnotatedWithTimer() {}
 
-    @Pointcut("@annotation(ru.gb.Timer)")
+    @Pointcut("@annotation(ru.gb.timer.Timer)")
     public void methodsAnnotatedWithTimer() {
     }
 

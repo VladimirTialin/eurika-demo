@@ -2,13 +2,14 @@ package ru.gb;
 
 import com.github.javafaker.Faker;
 import org.springframework.stereotype.Repository;
-import ru.gb.Timer.Timer;
+import ru.gb.timer.Timer;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 @Repository
+@Timer
 public class BookRepository {
 
     private final Faker faker;
