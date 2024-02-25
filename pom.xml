@@ -20,7 +20,8 @@
 		<module>issue-service</module>
 		<module>book-service</module>
 		<module>model</module>
-	</modules>
+        <module>timer-starter</module>
+    </modules>
     <properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.0</spring-cloud.version>

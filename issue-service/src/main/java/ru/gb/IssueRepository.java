@@ -2,6 +2,7 @@ package ru.gb;
 
 import com.github.javafaker.Faker;
 import org.springframework.stereotype.Repository;
+import ru.gb.Timer.Timer;
 import ru.gb.service.BookProvider;
 import ru.gb.service.ReaderProvider;
 
@@ -9,6 +10,7 @@ import java.time.ZoneId;
 import java.util.*;
 
 @Repository
+@Timer
 public class IssueRepository {
     private final List<Issue> issues;
     public IssueRepository(BookProvider bookProvider, ReaderProvider readerProvider) {
